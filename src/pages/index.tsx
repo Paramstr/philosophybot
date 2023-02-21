@@ -1,24 +1,27 @@
-import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import Head from 'next/head'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className = "bg-[rgb(232,173,115)] text-white h-screen snap-mandatory overflow-scroll z-0"> {/* z-0 means base layer */} 
+    <div className = "bg-[rgb(241,208,176)] text-black h-screen snap-mandatory overflow-scroll z-0"> {/* z-0 means base layer */} 
 
       <Head>
-        <title> PhilosophyBot</title>
+        <title> Params Portfolio</title>
       </Head>
       
-
+      {/* <Header />  */}
+      <Navbar/>
       
       {/* Hero */}
+      <section id= "Hero" className='snap-center'>
 
-      <Navbar/>
-      <Hero/>
+        <Hero/>
+        
 
-
+      </section>
 
 
 
@@ -37,3 +40,5 @@ export default function Home() {
     </div>
   )
 }
+
+
